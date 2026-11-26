@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PizzaHub Client
 
-## Getting Started
+A modern pizza ordering platform built with Next.js, TypeScript, Tailwind CSS, and shadcn/ui. PizzaHub provides a responsive interface for customers, vendors, and administrators to manage the pizza ordering experience.
 
-First, run the development server:
+## Features
+
+- Authentication with Better Auth
+- Google OAuth sign-in
+- Role-based dashboards (Customer, Vendor, Admin)
+- Browse and filter approved menu items
+- Customer order management
+- Order tracking and cancellation
+- Vendor menu management
+- Admin menu approval and rejection
+- Premium vendor subscription UI
+- Responsive design
+- Motion animations
+
+## Tech Stack
+
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Motion
+- Better Auth
+- Stripe integration (vendor subscriptions)
+
+## Installation
+
+```bash
+git clone https://github.com/jipunroy/pizzahub-project.git
+cd pizzahub-project/pizzahub-client
+npm install
+```
+
+## Environment Variables
+
+Create a `.env.local` file in the client directory.
+
+```env
+NEXT_PUBLIC_API_URL=http://localhost:5000
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+```
+
+Use the appropriate deployed URLs when configuring production.
+
+## Run Locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The client will be available at:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Production Build
 
-## Learn More
+```bash
+npm run build
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The frontend is deployed using Vercel.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Frontend:** https://pizzahub-project-wwg9.vercel.app
+- **Backend API:** https://pizzahub-project.onrender.com
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```text
+pizzahub-client/
+├── src/
+│   ├── app/
+│   ├── components/
+│   ├── lib/
+│   └── ...
+├── public/
+├── package.json
+└── README.md
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Author
+
+PizzaHub – Full Stack Pizza Ordering Platform
